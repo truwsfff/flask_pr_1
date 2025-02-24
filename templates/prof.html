@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<meta charset="utf-8">
+    {% if 'инженер' in profe or 'строитель' in profe %}
+<h2 align="centre">Инженерные тренажеры</h2>
+<img src="/static/img/sci.png" alt="не сработало">
+ {% else %}
+       <h2 align="centre">Научные симуляторы</h2>
+<img src="/static/img/engi.png" alt="не сработало">
+ {% endif %}
+{% endblock %}
